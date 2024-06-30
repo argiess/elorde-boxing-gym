@@ -30,24 +30,34 @@
 
 
 /* ABOUT MEDIA CSS */
+@media(max-width: 1200px){
+    .about-section2{
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .img-div img{
+        width: 100%;
+    }
+}
+
 @media (max-width: 900px) {
-    .about-section{
+    .about-section, .about-section2{
         flex-direction: column;
         gap: .5rem;
     }
 }
 
 @media (max-width: 800px) {
-    .about-section p{
-        font-size: 1.2rem;
+    .about-section p, .about-section2 p{
+        font-size: 1.3rem;
     }
-    .vids-div video{
+    .vids-div video, .img-div img{
         width: 80%;
     }
 }
 
 @media (max-width: 500px) {
-    .vids-div video{
+    .vids-div video, .img-div img{
         width: 100%;
     }
 }
@@ -63,6 +73,12 @@
 @media (max-width: 850px) {
     .training-section .training-service{
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .training-section p{
+        font-size: 1.3rem;
     }
 }
 

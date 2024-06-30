@@ -4,14 +4,14 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-items: center;
     padding: 1.5rem 5rem;
-    z-index: 369;
+    background: transparent;
     transition: .3s ease-in-out;
+    z-index: 369;
 }
 .header.scrolled{
     background: var(--dark1);
@@ -25,6 +25,9 @@
 .header .div a{
     font-size: 1.5rem;
     color: var(--light1);
+}
+.header .div .title{
+    font-size: 2.5rem;
 }
 
 .header .logo img{
@@ -78,6 +81,7 @@
         padding: 1.5rem 2rem;
         background-color: var(--dark1);
     }
+    
     .burger{
         display: block;
     }
@@ -95,7 +99,7 @@
 
     .nav-menu{
         position: fixed;
-        top: -100%;
+        top: -150%;
         left: 0;
         /* top: 7.5rem; */
         gap: 0;
